@@ -4,10 +4,10 @@ export class Aside extends Component {
     render() {
         return (
             <aside>
-                <div className='caldar'>
+                <div>
                     <h2>CaldAR</h2>
                 </div>
-                <div className='nav'>
+                <div>
                     <ul>
                         <li>
                             <a href="#">Products</a>

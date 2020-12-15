@@ -4,30 +4,32 @@ export class AddTechnician extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div className="addSection">
                     <h2>Add Technician</h2>
                     <form>
-                        <div>
+                        <div className="formCol">
                             <p>Id</p>
-                            <input type='number'/>
+                            <input type='text'/>
                             <p>First Name</p>
                             <input type='text'/>
                             <p>Last Name</p>
                             <input type='text'/>
                             <p>Email</p>
-                            <input type='email'/>
+                            <input type='text'/>
+                        </div>
+                        <div className="formCol">    
                             <p>Type ID</p>
-                            <input type='number'/>
+                            <input type='text'/>
                             <p>Skills ID</p>
-                            <input type='number'/>
+                            <input type='text'/>
                             <p>Hour rate</p>
                             <input type='text'/>
                             <p>Daily capacity</p>
-                            <input type='number'/>
+                            <input type='text'/>
                         </div>
                     </form>
                     <div>
-                        <input type='submit' value='Add technician'/>
+                        <input type='submit' value='Submit' className="submitButton"/>
                     </div>
                 </div>
             </div>

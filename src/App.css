@@ -61,10 +61,6 @@
   box-shadow: 4px 4px 10px rgb(153, 153, 153);
 }
 
-.tableHeader {
-  border: 1px solid red;
-}
-
 .table th {
   padding-bottom: 15px;
   color: #e6541a;
@@ -97,5 +93,60 @@ td {
   color: #ffffff;
   background-color: #a81515;
   border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.addSection {
+  position: relative;
+  padding: 10px 0;
+  text-align: center;
+  background-image: linear-gradient(rgb(22, 22, 22), rgb(19, 19, 19));
+}
+
+.addSection h2 {
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  background-image: linear-gradient(rgb(179, 80, 41), #e6541a);
+  border-radius: 5px;
+}
+
+.formCol {
+  width: 40%;
+  margin: 30px 50px;
+}
+
+.formCol p {
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: start;
+  color: #ffffff;
+}
+
+.formCol input {
+  height: 28px;
+  width: 100%;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 5px;
+}
+
+.submitButton {
+  padding: 10px 30px;
+  margin: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgb(0, 75, 0);
+  border: 1px solid rgb(0, 75, 0);
   border-radius: 3px;
 }

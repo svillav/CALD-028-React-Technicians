@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+import technicians from '../src/data/technicians.json';
 import Header from './components/Header';
 import Aside from './components/Aside';
 import Technicians from './components/Technicians';
-import TechniciansList from './components/TechniciansList';
 
 export class App extends Component {
+  state = { technicians };
+
   render() {
     return  (
       <div>
         <Aside />
         <Header />
-        <Technicians />
-        <TechniciansList />
+        <Technicians technicians={this.state.technicians} />
       </div>
     );
   }

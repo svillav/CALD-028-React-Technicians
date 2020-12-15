@@ -12,7 +12,7 @@ export class TechniciansList extends Component {
             skillsId,
             hour_rate,
             daily_capacity
-        } = this.props.technicians;
+        } = this.props.technician;
         return  (
             <tr style={{height: '40px', textAlign: 'center'}}>
                 <td>{id}</td>
@@ -35,7 +35,7 @@ export class TechniciansList extends Component {
 }
 
 TechniciansList.propTypes = {
-    technicians: propTypes.array.isRequired
+    technician: propTypes.array.isRequired
 }
 
 export default TechniciansList

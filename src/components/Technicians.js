@@ -8,19 +8,19 @@ class Technicians extends Component {
             <div>
                 <div className='app-list'>
                     <table>
-                        <tr>
-                            <th>Id</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Email</th>
-                            <th>Type ID</th>
-                            <th>Skills ID</th>
-                            <th>Hour rate</th>
-                            <th>Daily capacity</th>
-                        </tr>
+                        <thead>
+                            <tr>Id</tr>
+                            <tr>First Name</tr>
+                            <tr>Last Name</tr>
+                            <tr>Email</tr>
+                            <tr>Type ID</tr>
+                            <tr>Skills ID</tr>
+                            <tr>Hour rate</tr>
+                            <tr>Daily capacity</tr>
+                        </thead>
                         <tbody>
-                            {this.props.technicians.map((technicians) => 
-                                <TechniciansList />
+                            {this.props.technicians.map((technician) => 
+                                <TechniciansList key={technician.id} technician={technician}/>
                             )}
                         </tbody>
                     </table>

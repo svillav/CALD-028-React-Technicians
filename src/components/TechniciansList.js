@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
+import '../App.css';
 
 export class TechniciansList extends Component {
     render() {
@@ -14,7 +15,7 @@ export class TechniciansList extends Component {
             daily_capacity
         } = this.props.technician;
         return  (
-            <tr style={{height: '40px', textAlign: 'center'}}>
+            <tr className="tbody" style={{height: '40px', textAlign: 'center'}}>
                 <td>{id}</td>
                 <td>{firstName}</td>
                 <td>{lastName}</td>
@@ -24,10 +25,10 @@ export class TechniciansList extends Component {
                 <td>{hour_rate}</td>
                 <td>{daily_capacity}</td>
                 <td>
-                    <button>Update</button>
+                    <button className="update">Update</button>
                 </td>
                 <td>
-                    <button onClick={this.props.deleteTechnician.bind(this, id)}>Delete</button>
+                    <button className="delete" onClick={this.props.deleteTechnician.bind(this, id)}>Delete</button>
                 </td>
             </tr>
         )

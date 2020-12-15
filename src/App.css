@@ -47,7 +47,6 @@
 }
 
 .table {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
 }
@@ -56,8 +55,47 @@
   position: relative;
   padding: 40px;
   margin: 30px 0;
-  width: 95%;
+  width: 98%;
   border: 1px solid rgb(241, 241, 241);
   border-radius: 4px;
   box-shadow: 4px 4px 10px rgb(153, 153, 153);
+}
+
+.tableHeader {
+  border: 1px solid red;
+}
+
+.table th {
+  padding-bottom: 15px;
+  color: #e6541a;
+  font-size: 20px;
+}
+
+td {
+  position: relative;
+  text-align: start;
+}
+
+.tbody td {
+  position: relative;
+  height: 40px;
+  text-align: center;
+  left: 5px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.update {
+  padding: 8px 14px;
+  color: #ffffff;
+  background-color: #e6541a;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.delete {
+  padding: 8px 14px;
+  color: #ffffff;
+  background-color: #a81515;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class AddTechnician extends Component {
     render() {
@@ -9,21 +9,21 @@ export class AddTechnician extends Component {
                     <form>
                         <div>
                             <p>Id</p>
-                            <input type='text'/>
+                            <input type='number'/>
                             <p>First Name</p>
                             <input type='text'/>
                             <p>Last Name</p>
                             <input type='text'/>
                             <p>Email</p>
-                            <input type='text'/>
+                            <input type='email'/>
                             <p>Type ID</p>
-                            <input type='text'/>
+                            <input type='number'/>
                             <p>Skills ID</p>
-                            <input type='text'/>
+                            <input type='number'/>
                             <p>Hour rate</p>
                             <input type='text'/>
                             <p>Daily capacity</p>
-                            <input type='text'/>
+                            <input type='number'/>
                         </div>
                     </form>
                     <div>

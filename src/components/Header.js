@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
     return (
-        <header style={headerStyle}>
+        <header className="header">
             <h1>Technicians</h1>
         </header>
     )
@@ -13,11 +13,6 @@ const headerStyle = {
     color: '#fff',
     textAlign: 'center',
     padding: '10px'
-}
-
-const linkStyle = {
-    color: '#fff',
-    textDecoration: 'none'
 }
 
 export default Header;

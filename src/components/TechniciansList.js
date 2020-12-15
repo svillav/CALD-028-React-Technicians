@@ -27,7 +27,7 @@ export class TechniciansList extends Component {
                     <button>Update</button>
                 </td>
                 <td>
-                    <button>Delete</button>
+                    <button onClick={this.props.deleteTechnician.bind(this, id)}>Delete</button>
                 </td>
             </tr>
         )

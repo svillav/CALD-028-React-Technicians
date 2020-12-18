@@ -22,7 +22,8 @@ class Technicians extends Component {
                         <tbody>
                             {this.props.technicians.map((technician) => 
                                 <TechniciansList key={technician.id} technician={technician}
-                                deleteTechnician={this.props.deleteTechnician} />
+                                deleteTechnician={this.props.deleteTechnician}
+                                selectItem={this.props.selectItem} />
                             )}
                         </tbody>
                     </table>

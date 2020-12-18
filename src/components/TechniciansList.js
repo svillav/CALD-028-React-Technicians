@@ -14,6 +14,7 @@ export class TechniciansList extends Component {
             hour_rate,
             daily_capacity
         } = this.props.technician;
+
         return  (
             <tr className="tbody" style={{height: '40px', textAlign: 'center'}}>
                 <td>{id}</td>
@@ -25,10 +26,10 @@ export class TechniciansList extends Component {
                 <td>{hour_rate}</td>
                 <td>{daily_capacity}</td>
                 <td>
-                    <button className="edit">Edit</button>
+                    <button className="edit" onClick={() => this.props.selectItem(id)}>Edit</button>
                 </td>
                 <td>
-                    <button className="delete" onClick={this.props.deleteTechnician.bind(this, id)}>Delete</button>
+                    <button className="delete" onClick={() => this.props.deleteTechnician(id)}>Delete</button>
                 </td>
             </tr>
         )

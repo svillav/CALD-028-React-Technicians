@@ -7,10 +7,29 @@ import AddTechnician from './components/AddTechnician';
 import './App.css';
 
 export class App extends Component {
-  state = { technicians };
+  state = { 
+    technicians,
+    technician: {}
+  };
 
-  
+  addTechnician = ([id, firstName, lastName, email, typeIds, skillsId, hour_rate, daily_capacity]) => {
+    const newTechnician = { 
+      id,
+      firstName,
+      lastName,
+      email,
+      typeIds,
+      skillsId,
+      hour_rate,
+      daily_capacity
+    }
+    this.setState({ technicians: [...this.state.technicians, newTechnician] })
+  }
 
+  selectItem = (id) => {
+    const technciniansEdit = this.state.technicians.find(technician => technician.id === id);
+    this.setState({ technician: technciniansEdit });
+  }
 
   deleteTechnician = (id) => {
     this.setState({technicians: [...this.state.technicians.filter(technicians =>
@@ -23,9 +42,10 @@ export class App extends Component {
         <Aside />
         <div className="main">
           <Header />
-          <Technicians technicians = {this.state.technicians}
-            deleteTechnician = {this.deleteTechnician} />
-          <AddTechnician />
+          <Technicians technicians={this.state.technicians}
+            deleteTechnician={this.deleteTechnician} 
+            selectItem={this.selectItem} />
+          <AddTechnician AddTechnician={this.AddTechnician} />
         </div>
       </div>
     );

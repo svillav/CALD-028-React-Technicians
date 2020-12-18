@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 
 export class AddTechnician extends Component {
-
+    state = {
+        id: '',
+        firstName: '',
+        lastName: '',
+        email: '',
+        typeIds: '',
+        skillsId: '',
+        hour_rate: '',
+        daily_capacity: ''
+    }
+    
     
 
     render() {

@@ -12,14 +12,26 @@ export class AddTechnician extends Component {
         daily_capacity: ''
     }
     
-    
+    onSubmit = (e) => {
+        e.preventDefault();
+        this.setState({
+            id: '',
+            firstName: '',
+            lastName: '',
+            email: '',
+            typeIds: '',
+            skillsId: '',
+            hour_rate: '',
+            daily_capacity: ''
+        })
+    }
 
     render() {
         return (
             <div>
                 <div className="addSection">
                     <h2>Add Technician</h2>
-                    <form>
+                    <form onSubmit={this.onSubmit}>
                         <div className="formCol">
                             <p>Id</p>
                             <input type='text'/>

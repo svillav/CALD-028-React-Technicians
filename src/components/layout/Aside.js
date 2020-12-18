@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../layout/Aside';
 
 export class Aside extends Component {
     render() {

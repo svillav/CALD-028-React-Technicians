@@ -80,7 +80,7 @@ td {
   border-bottom: 1px solid rgb(192, 192, 192);
 }
 
-.update {
+.edit {
   padding: 8px 14px;
   color: #ffffff;
   background-color: #e6541a;
@@ -115,6 +115,7 @@ form {
   flex-direction: row;
   justify-content: space-around;
   width: 70%;
+  padding-bottom: 25px;
   margin: auto;
   background-image: linear-gradient(rgb(179, 80, 41), #e6541a);
   border-radius: 5px;
@@ -146,7 +147,7 @@ form {
   font-size: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: rgb(0, 75, 0);
+  background-image: linear-gradient(rgb(14, 136, 14), rgb(8, 107, 8));
   border: 1px solid rgb(0, 75, 0);
   border-radius: 3px;
 }

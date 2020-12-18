@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import technicians from '../src/data/technicians.json';
-import Header from './components/Header';
-import Aside from './components/Aside';
+import Header from './components/layout/Header';
+import Aside from './components/layout/Aside';
 import Technicians from './components/Technicians';
 import AddTechnician from './components/AddTechnician';
 import './App.css';
 
 export class App extends Component {
   state = { technicians };
+
+
 
   deleteTechnician = (id) => {
     this.setState({technicians: [...this.state.technicians.filter(technicians =>

@@ -25,7 +25,7 @@ export class TechniciansList extends Component {
                 <td>{hour_rate}</td>
                 <td>{daily_capacity}</td>
                 <td>
-                    <button className="update">Edit</button>
+                    <button className="edit">Edit</button>
                 </td>
                 <td>
                     <button className="delete" onClick={this.props.deleteTechnician.bind(this, id)}>Delete</button>

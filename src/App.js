@@ -32,6 +32,15 @@ export class App extends Component {
     this.setState({ technician: technciniansEdit });
   }
 
+  updateItem = (technicianUpdate) => {
+    const technicianPosition = this.state.technicians.map((technician) => 
+      technician.id
+    ).indexOf(technicianUpdate.id)
+    const techniciansUpdate = this.state.technicians;
+    techniciansUpdate[technicianPosition] = technicianUpdate;
+    this.setState({technicians: techniciansUpdate, technician: {}});
+  }
+
   deleteTechnician = (id) => {
     this.setState({technicians: [...this.state.technicians.filter(technicians =>
       technicians.id !== id)]});
@@ -48,7 +57,8 @@ export class App extends Component {
           selectItem={this.selectItem} />
           <AddTechnician addTechnician={this.addTechnician}
           technicians={this.state.technicians} />
-          <EditTechnician />
+          <EditTechnician technician={this.state.technician}
+          updateItem={this.updateItem} />
         </div>
       </div>
     );

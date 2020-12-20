@@ -21,9 +21,9 @@ class Technicians extends Component {
                         </tr>
                         <tbody>
                             {this.props.technicians.map((technician) => 
-                                <TechniciansList key={technician.id} technician={technician}
-                                deleteTechnician={this.props.deleteTechnician}
-                                selectItem={this.props.selectItem} />
+                            <TechniciansList key={technician.id} technician={technician}
+                            deleteTechnician={this.props.deleteTechnician}
+                            selectItem={this.props.selectItem} />
                             )}
                         </tbody>
                     </table>

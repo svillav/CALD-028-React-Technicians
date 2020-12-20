@@ -4,6 +4,7 @@ import Header from './components/layout/Header';
 import Aside from './components/layout/Aside';
 import Technicians from './components/Technicians';
 import AddTechnician from './components/AddTechnician';
+import EditTechnician from './components/EditTechnician';
 import './App.css';
 
 export class App extends Component {
@@ -43,9 +44,11 @@ export class App extends Component {
         <div className="main">
           <Header />
           <Technicians technicians={this.state.technicians}
-            deleteTechnician={this.deleteTechnician} 
-            selectItem={this.selectItem} />
-          <AddTechnician AddTechnician={this.AddTechnician} />
+          deleteTechnician={this.deleteTechnician} 
+          selectItem={this.selectItem} />
+          <AddTechnician addTechnician={this.addTechnician}
+          technicians={this.state.technicians} />
+          <EditTechnician />
         </div>
       </div>
     );
